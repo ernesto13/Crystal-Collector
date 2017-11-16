@@ -1,0 +1,96 @@
+.jumbotron-fluid {
+    margin-top: 20px;
+    color: #85888a;
+    padding: 60px;
+}
+
+body {
+    background: #bdc3c7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #2c3e50, #bdc3c7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /*background-image: url("../images/grunge.jpg");*/
+}
+
+#dispName {
+    top: -20px;
+    position: relative;
+}
+
+#userPoints {
+    font-size: 37px;
+    color: #85888a
+}
+
+#computerScore {
+    font-size: 37px;
+    color: #fff;
+}
+
+#userTotalScore {
+    margin-top: 20px;
+    color: #85888a;
+    margin-bottom: 80px;
+}
+
+#userWins,
+#userLosses {
+    color: #fff;
+    font-size: 25px;
+}
+
+#update {
+    color: #fff;
+    font-size: 25px;
+}
+
+.card-header {
+    color: #85888a;
+    font-size: 25px;
+}
+
+.card-block {
+    background-image: url(../assets/images/ice.jpg);
+}
+
+
+/*=======style for icons=======*/
+
+#amethyst,
+#crystalBall,
+#zircon,
+#gemstone {
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+}
+
+#crystalBall {
+    margin-left: -29px;
+}
+
+#gemstone {
+    margin-left: 20px;
+}
+
+#crystalBall:hover,
+#amethyst:hover,
+#zircon:hover,
+#gemstone:hover {
+    opacity: .8;
+}
+
+
+/*=====footer=====*/
+
+#footer {
+    background: #eceeef;
+    color: #85888a;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    border-top: 7px solid #939699;
+    padding-top: 10px;
+}

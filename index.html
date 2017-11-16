@@ -5,10 +5,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Crystal Collector</title>
 </head>
 
 <body>
+
+    <audio id="winner" src="assets/sounds/tada.mp3"></audio>
+    <audio id="loser" src="assets/sounds/loser.mp3"></audio>
+
+    <div class="container">
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 id="dispName" class="display-4 text-center">Crystal Collector!</h1>
+                <p class="lead">You will be given a random number at the start of the game.</p>
+                <p class="lead">There are four crystals below. By clicking on a crystal, you will add specific amount of points to the total of your score.</p>
+                <p class="lead">You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+                <p class="lead">The value of each crystal is hidden from you until you click on it.</p>
+                <p class="lead">Each time when the game starts, the game will change the values of each crystal.</p>
+            </div>
+        </div>
+
+        <div class="row no-gutters">
+            <div id="computerScore" class="col-12 col-sm-6 col-md-8"></div>
+            <div id="userScore" class="col-6 col-md-4">
+                <div id="update"></div>
+                <p id="userWins">Wins:</p>
+                <p id="userLosses">Losses:</p>
+            </div>
+        </div>
+
+
+        <!--crystal container-->
+        <div class="card text-center">
+            <div class="card-header">
+                Click the crystals
+            </div>
+            <div class="card-block">
+
+                <div class="images">
+                    <img id="amethyst" classs="crystals" src="assets/images/amethyst.png" alt="amethyst">
+                    <img id="crystalBall" classs="crystals" src="assets/images/quartz.png" alt="crystal ball">
+                    <img id="zircon" classs="crystals" src="assets/images/zircon.png" alt="zircon">
+                    <img id="gemstone" classs="crystals" src="assets/images/gemstone.png" alt="crystal">
+                </div>
+                <!--image buttons-->
+
+            </div>
+            <div class="card-footer">
+
+            </div>
+        </div>
+
+
+        <div id="userTotalScore" class="card">
+            <h3 class="card-header">Your Total Score is:</h3>
+            <div class="card-block">
+                <div id="userPoints">
+                    0
+                </div>
+                <!--box for user points-->
+
+            </div>
+        </div>
+
+
+    </div>
+    <!--end of container-->
+    <div id="footer" class="footer text-center fixed-bottom">
+        &copy; 2017 | Ernesto Samaniego
+    </div>
+
+    <!--end of footer-->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </body>
 
